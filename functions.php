@@ -5,3 +5,8 @@ add_theme_support('post-thumbnails');
 
 // Ajouter automatiquement le titre du site dans l'en-tête du site
 add_theme_support('title-tag');
+
+register_nav_menus(array(
+    'main' => 'Menu Principal',
+    'footer' => 'Bas de page',
+));
