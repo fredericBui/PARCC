@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Oxygen", sans-serif;
+}
+
+p {
+  font-family: "Crimson Text", serif;
+}
+
+header {
+  font-family: "Oxygen", sans-serif;
+  background-color: rgba(55, 59, 68, 1);
+  display: grid;
+  grid-template-columns: 10% 90%;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+header img {
+  width: 80%;
+}
+
+#main-menu div {
+  height: 50%;
+}
+
+#main-menu-top {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#main-menu-top ul {
+  list-style: none;
+  display: flex;
+}
+
+#main-menu-top ul li {
+  padding: 0px 10px;
+}
+
+#main-menu-top ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+#main-menu-bottom ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+#main-menu-bottom ul li a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 10px;
+  border-radius: 2em;
+}
+
+main {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#space {
+  height: 150px;
+}
