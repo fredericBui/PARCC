@@ -136,3 +136,20 @@ header a img {
   text-decoration: none;
   color: white;
 }
+
+/* Publications */
+
+#publications {
+  padding-top: 30px;
+  padding-left: 25px;
+}
+
+#publications > li {
+  padding-bottom: 20px;
+}
+
+#publications > li > a {
+  color: #9e0e40;
+  text-decoration: none;
+  cursor: pointer;
+}
