@@ -2,42 +2,44 @@
 <html <?php language_attributes(); ?>>
 
 <head>
-    <meta charset="<?php bloginfo('charset'); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta charset="<?php bloginfo('charset'); ?>">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <?php wp_head(); ?>
+	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-    <header class="header">
-        <a href="<?php echo home_url('/'); ?>">
-            <img src="<?php echo get_template_directory_uri(); ?>/logo.png" alt="Logo">
-        </a>
-        <div id="main-menu">
-            <div id="main-menu-top">
-                <?php
-                wp_nav_menu(
-                    array(
-                        'theme_location' => 'main-top',
-                        'container' => 'ul', // afin d'éviter d'avoir une div autour 
-                        'menu_class' => 'site__header__menu', // ma classe personnalisée 
-                    )
-                );
-                ?>
-            </div>
-            <div id="main-menu-bottom">
-                <?php
-                wp_nav_menu(
-                    array(
-                        'theme_location' => 'main-bottom',
-                        'container' => 'ul', // afin d'éviter d'avoir une div autour 
-                        'menu_class' => 'site__header__menu', // ma classe personnalisée 
-                    )
-                );
-                ?>
-            </div>
-        </div>
-    </header>
-    <div id="space"></div>
-    <main>
-        <?php wp_body_open(); ?>
+	<header class="header">
+		<a href="<?php echo home_url('/'); ?>">
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/logo.png" alt="Logo">
+		</a>
+		<div id="main-menu">
+			<div id="main-menu-top">
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'main-top',
+						'container' => 'ul', // afin d'éviter d'avoir une div autour 
+						'menu_class' => 'site__header__menu', // ma classe personnalisée 
+					)
+				);
+				?>
+			</div>
+			<div id="main-menu-bottom">
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'main-bottom',
+						'container' => 'ul', // afin d'éviter d'avoir une div autour 
+						'menu_class' => 'site__header__menu', // ma classe personnalisée 
+					)
+				);
+				?>
+
+			</div>
+				<a class="toggle-nav" href="#">&#9776;</a>
+		</div>
+	</header>
+	<div id="space"></div>
+	<main>
+		<?php wp_body_open(); ?>

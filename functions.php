@@ -38,4 +38,12 @@ function cp_change_post_object()
     $labels->all_items = 'Toutes les Publications';
     $labels->menu_name = 'Publications';
     $labels->name_admin_bar = 'Publications';
-}
+};
+
+function wpmu_burger_menu_scripts()
+{
+
+	wp_enqueue_script('burger-menu-script', get_stylesheet_directory_uri() . '/scripts/burger-menu-script.js', array('jquery'));
+};
+
+add_action('wp_enqueue_scripts', 'wpmu_burger_menu_scripts');
