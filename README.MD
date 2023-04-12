@@ -7,3 +7,7 @@
 # Ressource pour apprendre WordPress :
 
 https://capitainewp.io/formations/developper-theme-wordpress/menus-moteur-recherche
+
+# Route spéciale pour les publications personnalisées
+
+.../?page_id=ID&tag=Login
