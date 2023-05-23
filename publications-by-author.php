@@ -5,7 +5,7 @@
 */
 
 get_header(); ?>
-<h1><?php echo get_query_var('tag') ?>’s Publications</h1>
+<h1>Publications de l'équipe</h1>
 <?php
 
 $author_id = get_user_by('login', get_query_var('tag'))->id;

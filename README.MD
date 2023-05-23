@@ -1,6 +1,7 @@
 # Pré-recquis
 
 - Installer WordPress en local
+- Créer une base de donnée
 - Ajouter ce thême au dossier WordPress dans wp-content > themes
 - Ajouter l'extension Elementor à WordPress
 
